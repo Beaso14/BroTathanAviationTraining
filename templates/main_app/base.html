@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/static/main.css">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <a class="nav-brand" href="{% url 'index' %}">BTATS</a>
+        <a class="nav-statement" href="{% url 'index' %}">Bro Tathan Aviation Training Ltd</a>
+      </div>
+      <div class="navbar-items">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'courses' %}">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page-container">
+      {% block body_block %}
+      {% endblock %}
+    </div>
+
+    <footer>
+
+      <div class="footer-address">
+        Bro Tathan Aerospace Business Park <br>
+        St Athan <br>
+        Vale of Glamorgan <br>
+        emailaddress@gmail.com <br>
+        077test919 <br>
+        webaddress.com <br>
+      </div>
+
+      <div class="footer-header">
+        BTATS
+        <p id="footer-statement">Bro Tathan Aviation Training Ltd</p>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
