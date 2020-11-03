@@ -30,7 +30,7 @@ SECRET_KEY = 'qz!s4)09lz&nb1w!$3tb1eruzsx#(vmok$s-3*4tc3mti_)vm#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://git.heroku.com/bro-tathan-aviation-training.git']
+ALLOWED_HOSTS = ['bro-tathan-aviation-training.herokuapp.com']
 
 
 # Application definition
