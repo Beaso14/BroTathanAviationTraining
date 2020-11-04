@@ -9,21 +9,6 @@ body{
   width: 100vw;
 }
 
-/* Title */
-.header {
-  /* font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif; */
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  line-height: 1.25;
-  margin: 35px auto 30px;
-  font-size: 37px;
-  font-weight: 500px;
-  text-align: center;
-  letter-spacing: 2px;
-  width: 95vw;
-  clear: both;
-  color: #234250;
-}
-
 h1{
   font-weight: 400px;
 }
@@ -124,7 +109,7 @@ li{
   bottom: 35px;
   left: 50%;
   transform: translate(-50%);
-  font-family:sans-serif;
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
   font-size: 35px;
   font-weight: 400px;
   color: #fff;
@@ -153,7 +138,7 @@ li{
   bottom: 35px;
   left: 50%;
   transform: translate(-50%);
-  font-family:sans-serif;
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
   font-size: 35px;
   font-weight: 400px;
   color: #fff;
@@ -177,6 +162,26 @@ li{
 }
 
 /* ////// main content block //////*/
+
+.title-info{
+  height: 100vh;
+}
+
+/* Title */
+.header {
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
+  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  line-height: 1.25;
+  margin: 35px auto 30px;
+  font-size: 37px;
+  font-weight: 500px;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 95vw;
+  clear: both;
+  color: #234250;
+}
+
 
 .hline{
   display: block;
@@ -249,7 +254,7 @@ li{
   flex-direction: row;
   justify-content: center;
   width: 32%;
-  height: 300px;
+  height: 400px;
   box-sizing: border-box;
   padding: 10px;
   background-color: #234250;
@@ -308,12 +313,28 @@ li{
   height: 80px;
 }
 
+
+.box-container{
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+.parallax{
+  background-image: url("../media/Home page Wing Repair - Hi Res.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #secondary-image{
   /* position: sticky;
   top: 0; */
   display: block;
   width: 100vw;
-  height: 600px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   filter: brightness(60%);
@@ -326,7 +347,7 @@ li{
   top: 0px;
   left: 50%;
   transform: translate(-50%);
-  font-family:sans-serif;
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
   font-size: 35px;
   font-weight: 400px;
   color: #fff;
@@ -334,11 +355,12 @@ li{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .image-row-block-header{
@@ -348,9 +370,14 @@ li{
   justify-content: center;
   width: 700px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 10px;
   background-color: #a8dae2;
   border-radius: 10px;
+  border-bottom: 1px solid #234250;
+}
+
+.image-row-block-header:last-child{
+  border-bottom: none;
 }
 
 .block-header-image{
@@ -360,6 +387,8 @@ li{
   font-weight: bold;
   font-family:WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
   color: #234250;
+  margin: 0 0 5px;
+  letter-spacing: 1px;
 }
 
 .block-text{
