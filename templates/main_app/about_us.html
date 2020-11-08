@@ -5,5 +5,63 @@
 <h1 class="header">Bro Tathan Aviation Training Ltd</h1>
 
 <hr class="hline">
-<p>Summary here</p>
+
+<div class="about">
+  <div class="about-section">
+    <img src="/media/IMG-20190517-WA0007.jpg" alt="" class="about-img">
+    Based in the South of Wales, at BTAT we provide EASA Part 147 and Part 145
+    training courses. <br>
+    <br>
+    Whether face to face in a classroom, practical training on live aircraft,
+    course examinations or remote training due to Covid restrictions,
+    we have a range of courses to suit your needs. <br>
+    <br>
+    Our courses on Airbus and Boeing aircraft are EASA 147.00128 and
+    147.0123 approved. <br>
+    <br>
+    As well as our Part 147 training, we provide bespoke courses from
+    Internal Auditor and Personal Development to
+    Inspection Management and Quality Management <br>
+    <br>
+    We are also offering remote training when COVID restrictions apply.
+
+  </div>
+</div>
+
+<div class="about-courses-wrapper">
+  <div class="about-item">
+    <h2 class="about-header"> Courses </h2>
+    <ul class="about-features">
+      <li class="about-feature-item"> Aircraft Type Rating Training </li>
+      <li class="about-feature-item">
+        Basic Module training for Part 66 Basic Engineer Licence
+      </li>
+      <li class="about-feature-item">
+        Off the shelf and bespoke training programmes including but not
+         limited to Part 145 <br>
+         Continuation training aiming to meet and satisfy
+         customer requirements
+       </li>
+    </ul>
+    <a href="{% url 'courses' %}" class="about-button"> See all Courses Here </a>
+  </div>
+
+  <div class="about-item">
+    <h2 class="about-header"> Approvals </h2>
+    <ul class="about-features">
+      <li class="about-feature-item">
+        Airbus approvals – Provided by Telepathy Academy EASA 147.00128
+      </li>
+      <li class="about-feature-item">
+        Boeing Approvals - Provided by Telepathy Academy EASA 147.00128 &
+        British School of Aviation (BSA) 147.0123
+      </li>
+      <li class="about-feature-item">
+        Part 147 Basic approvals – Provided by QCM EASA 147.0012 
+       </li>
+    </ul>
+    <a href="{% url 'approvals' %}" class="about-button"> See Approvals Here </a>
+  </div>
+</div>
+
 {% endblock %}

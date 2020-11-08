@@ -13,3 +13,6 @@ def contact(request):
 
 def courses(request):
     return render(request, 'main_app/courses.html')
+
+def approvals(request):
+    return render(request, 'main_app/approvals.html')

@@ -12,7 +12,7 @@
   <body>
     <nav class="navbar">
       <div class="navbar-header">
-        <a class="nav-brand" href="{% url 'index' %}">BTATS</a>
+        <a class="nav-brand" href="{% url 'index' %}">BTAT</a>
         <a class="nav-statement" href="{% url 'index' %}">Bro Tathan Aviation Training Ltd</a>
       </div>
       <div class="navbar-items">
@@ -27,6 +27,9 @@
             <a class="nav-link" href="{% url 'courses' %}">Courses</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{% url 'approvals' %}">Approvals</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{% url 'contact' %}">Contact</a>
           </li>
         </ul>
@@ -38,8 +41,19 @@
       {% endblock %}
     </div>
 
-    <footer>
+    <div class="quote-section">
+      <div class="quote-block">
+        <blockquote class="quote-quote"cite="Albert Einstein">
+          <p> In learning you will teach and in teaching you will learn </p>
+        </blockquote>
+      </div>
+    </div>
 
+    <footer class="title-footer">
+      <div class="footer-header">
+        BTAT
+        <p id="footer-statement">Bro Tathan Aviation Training Ltd</p>
+      </div>
       <div class="footer-address">
         Bro Tathan Aerospace Business Park <br>
         St Athan <br>
@@ -49,13 +63,8 @@
         webaddress.com <br>
       </div>
 
-      <div class="footer-header">
-        BTATS
-        <p id="footer-statement">Bro Tathan Aviation Training Ltd</p>
-      </div>
+
     </footer>
-
-
 
   </body>
 </html>
