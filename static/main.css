@@ -837,19 +837,25 @@ p:last-child { margin-bottom: 0; }
 /* ////// contact ////////*/
 .approval-container{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: #a8dae2;
   align-items: center;
-  padding: 45px 0 60px;
+  padding: 45px 0 30px;
+}
+
+@media (min-width: 900px){
+  .approval-container{
+    flex-direction: row;
+  }
 }
 
 .approval-header{
   width:100%;
   text-align: center;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
   color: #234250;
   padding: 0 0 15px;
@@ -867,14 +873,15 @@ p:last-child { margin-bottom: 0; }
 }
 
 .approval-img-frame{
-  border: 1px #ccc solid;
+  display: flex;
+  justify-content: center;
   height: 400px;
-  width:300px;
+  padding: 0 10px 20px;
 }
 
 .approval-img{
-  width: 100%;
-  height: 100%;
+  height: 400px;
+  width:300px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
