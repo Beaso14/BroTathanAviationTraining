@@ -835,24 +835,32 @@ p:last-child { margin-bottom: 0; }
 
 
 /* ////// contact ////////*/
+
+.approval-wrapper{
+  background-color: #a8dae2;
+  padding: 45px 0 30px;
+  width: 100vw;
+}
+
 .approval-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   background-color: #a8dae2;
   align-items: center;
-  padding: 45px 0 30px;
+
 }
 
 @media (min-width: 900px){
   .approval-container{
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .approval-header{
   width:100%;
+  display: inline-block;
   text-align: center;
   font-size: 30px;
   font-weight: 500;
@@ -862,7 +870,7 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: 1px;
 }
 
-.approval-container h4{
+.approval-wrapper h4{
   width: 100%;
   text-align: center;
   font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
