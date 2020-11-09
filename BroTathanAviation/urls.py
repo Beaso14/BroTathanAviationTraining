@@ -26,6 +26,6 @@ urlpatterns = [
     url(r'^about/$',views.about_us,name='about_us'),
     url(r'^courses/$',views.courses,name='courses'),
     url(r'^contact/$',views.contact,name='contact'),
-    url(r'^approvals/$',views.contact,name='approvals'),
+    url(r'^approvals/$',views.approvals,name='approvals'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
