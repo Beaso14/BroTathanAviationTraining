@@ -53,7 +53,7 @@ li{
 }
 
 .nav-item:last-child{
-  padding: 0 30px;
+  padding: 0 30px 0 15px;
 }
 
 .nav-link{
@@ -498,7 +498,7 @@ p:last-child { margin-bottom: 0; }
   height: 50vh;
   width: 100vw;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -510,7 +510,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .footer-header{
-  width: 50%;
+  width: 28%;
   font-size: 30px;
   font-weight: 500px;
   text-align: center;
@@ -547,7 +547,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .social-media-list{
-  padding: 15px 0;
+  padding: 15px 0 0px;
 }
 
 .social-media-list li {
@@ -567,6 +567,11 @@ p:last-child { margin-bottom: 0; }
 .social-media-list li a {
     color: #fff;
     transition: color 0.5s;
+}
+
+.social-media-list li a:hover {
+    color: #a8dae2;
+    transition: color 200ms;
 }
 /* ////// about us page ////////*/
 
@@ -744,8 +749,89 @@ p:last-child { margin-bottom: 0; }
   }
 }
 
+/* ////// contact ////////*/
+
+.contact-container{
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
+  /* max-width: 500px; */
+  width: 100vw;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #a8dae2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
+.contact{
+  background-color: #a8dae2;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+.contact h3{
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.contact h4{
+  margin: 5px 0 20px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact fieldset {
+  border: medium none;
+  margin: 0 0 15px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.contact fieldset:last-child {
+  margin: 0;
+}
+
+.contact input, .contact textarea{
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 auto 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.contact textarea {
+  height: 150px;
+  width: 100%;
+  max-width: 500px;
+  resize: none;
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
+}
+
+.contact button{
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+  border: 1px #ccc solid;
+  background-color: #FFF;
+  color: #234250;
+  padding: 10px;
+  font-size: 15px;
+  transition: background-color 200ms ease-in-out;
+  border-radius: 10px;
+}
+
+.contact button:hover {
+  background-color: #E5E5E5;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
