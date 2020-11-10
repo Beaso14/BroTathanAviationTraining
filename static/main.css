@@ -225,6 +225,7 @@ li{
   justify-content: space-between;
   width: 90vw;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 @media (min-width: 900px){
@@ -254,6 +255,7 @@ li{
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+  opacity: 80%;
 }
 
 .row-block-header{
