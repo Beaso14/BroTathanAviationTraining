@@ -244,9 +244,9 @@ li{
   }
 }
 
-@media (min-width: 1015px){
+@media (min-width: 950px){
   .block-content{
-    height: 234px;
+    height: 260px;
   }
 }
 
