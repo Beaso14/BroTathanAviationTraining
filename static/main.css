@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   width: 100vw;
   max-width:100%;
@@ -707,11 +711,11 @@ p:last-child { margin-bottom: 0; }
   padding: 15px 35px;
   text-decoration: none;
   margin: 25px 0;
-  transition: background-color 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .course-button:hover {
-  background-color: #a8dae2;
+  opacity: 80%;
   /* #e1f1ff; */
 }
 
@@ -729,6 +733,108 @@ p:last-child { margin-bottom: 0; }
   .course:last-child{
     border-right: none;
   }
+
+  .course-features{
+    min-height: 341px;
+  }
+}
+
+@media (min-width: 950px){
+  .course-features{
+    min-height: 270px;
+  }
+}
+
+.course-detail-wrapper{
+  background-color: #234250;
+  opacity: 80%;
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+#Aircraft-Type{
+  background-color: #fff;
+  color: #234250;
+}
+
+#Aircraft-Type a{
+  color: #234250;
+}
+
+.course-detail-wrapper h1{
+  font-size: 30px;
+  padding: 10px 0 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.course-detail-wrapper h3{
+  font-size: 15px;
+  padding: 10px 0 20px;
+  text-align: center;
+}
+
+.course-detail-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.course-detail-block{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 50px;
+}
+
+.course-detail-block h2{
+  font-size: 30px;
+  color: #a8dae2;
+  padding: 20px 0 0;
+}
+
+.bespoke-img{
+  width: 500px;
+}
+
+.course-detail-list{
+  margin-bottom: 30px;
+  text-align: center;
+  min-height: 426px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#airbus-bespoke{
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  /* border-style:  */
+}
+
+.course-detail-item{
+  font-size: 18px;
+  padding: 30px 0 8px;
+}
+
+.course-detail-item a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.course-detail-description{
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.course-detail-img{
+  max-width: 100%;
+  width: 270px;
+  height: 55px;
 }
 
 /* ////// contact ////////*/
