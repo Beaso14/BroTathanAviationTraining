@@ -27,5 +27,6 @@ urlpatterns = [
     url(r'^courses/$',views.courses,name='courses'),
     url(r'^contact/$',views.contact,name='contact'),
     url(r'^approvals/$',views.approvals,name='approvals'),
+    # url(r'^ad/$',views.ad,name='ad')
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

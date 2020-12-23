@@ -216,7 +216,19 @@ li{
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  width: 90vw;
+  color: #234250;
+  border: 1px solid #234250;
+  border-radius: 0.5px;
+}
+
+.hline-ad{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 90vw;
   color: #234250;
   border: 1px solid #234250;
@@ -977,6 +989,57 @@ p:last-child { margin-bottom: 0; }
   height: 400px;
   width:300px;
 }
+
+/* /////covid /////*/
+.covid{
+  font-size: 18px;
+  padding: 0px 0 8px;
+  color: #234250;
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
+  width: 90vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;;
+}
+
+.covid p{
+  color: #FF0000;
+  margin-left: auto;
+  margin-right: auto;;
+  text-align: center;
+}
+
+
+/* .image-primarytext{
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
+  font-size: 35px;
+  font-weight: 400px;
+  color: #fff;
+  letter-spacing: 1px;
+  animation: primaryfade 12s infinite;
+} */
+
+.index-button{
+  border-radius: 10px;
+  color: #a8dae2;
+  background-color: #234250;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: background-color 200ms ease-in-out;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
+}
+
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
