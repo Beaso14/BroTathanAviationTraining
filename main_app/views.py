@@ -17,5 +17,5 @@ def courses(request):
 def approvals(request):
     return render(request, 'main_app/approvals.html')
 
-def ad(request):
-    return render(request, 'main_app/ad.html')
+# def ad(request):
+#     return render(request, 'main_app/ad.html')
