@@ -20,7 +20,7 @@ def contact(request):
             'Email via Website from ' + message_name, #subject
             message, #message
             message_email, #from email
-            ['jamiesmithies1@gmail.com'], #to email
+            [EMAIL_HOST_USER], #to email
         )
 
         return render(request, 'main_app/contact.html',
