@@ -7,20 +7,28 @@
 <hr class="hline">
 
 <div class="contact-container">
-  <form class="contact" action="" method="post">
-    <h3> Get in Contact </h3>
-    <h4> Please get in touch for any additional information on our services </h4>
+  <form class="contact" action="{% url 'contact' %}" method="post">
+    {% csrf_token %}
+
+    <!-- if form filled out -->
+    {% if message_name %}
+      <h3> Thanks {{ message_name }} </h3>
+      <h4> We have recieved your email and will respond shortly. </h4>
+    {% else %} <!-- before form filled out -->
+      <h3> Get in Contact </h3>
+      <h4> Please get in touch for any additional information on our services </h4>
+    {% endif %}
     <fieldset>
-      <input type="text" placeholder="Full Name" tabindex="1" required>
+      <input type="text" name = "message-name" placeholder="Full Name" tabindex="1" required>
     </fieldset>
     <fieldset>
-      <input type="text" placeholder="Your Email Address" tabindex="2" required>
+      <input type="email" name = "message-email" placeholder="Your Email Address" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input type="tel" placeholder="Your Phone Number (Optional)" tabindex="3" required>
+      <input type="tel" placeholder="Your Phone Number (Optional)" tabindex="3">
     </fieldset>
     <fieldset>
-      <textarea placeholder="Type your message here..." tabindex="4" required ></textarea>
+      <textarea name="message" placeholder="Type your message here..." tabindex="4" required ></textarea>
     </fieldset>
     <fieldset>
       <button type="submit" name="submit" >Submit</button>
