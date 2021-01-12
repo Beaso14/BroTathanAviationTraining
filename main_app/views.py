@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from BroTathanAviation import settings
 
 # Create your views here.
 
@@ -20,7 +21,7 @@ def contact(request):
             'Email via Website from ' + message_name, #subject
             message, #message
             message_email, #from email
-            [EMAIL_HOST_USER], #to email
+            [settings.EMAIL_HOST_USER], #to email
         )
 
         return render(request, 'main_app/contact.html',
@@ -33,10 +34,6 @@ def courses(request):
 
 def approvals(request):
     return render(request, 'main_app/approvals.html')
-
-def send_email(request):
-    email = EmailMessage('test', 'test', to=['jamiesmithies1@gmail.com'])
-    email.send()
 
 # def ad(request):
 #     return render(request, 'main_app/ad.html')

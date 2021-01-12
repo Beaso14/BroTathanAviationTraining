@@ -1,2 +1,3 @@
 templates/mainapp/xGData.xlsx
 *.sqlite
+.env
