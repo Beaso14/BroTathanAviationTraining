@@ -14,3 +14,4 @@ six==1.15.0
 sqlparse
 virtualenv==20.1.0
 whitenoise==5.2.0
+python-decouple==3.4
