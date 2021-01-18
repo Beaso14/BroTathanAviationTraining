@@ -18,8 +18,8 @@ def contact(request):
 
         # send Email
         send_mail(
-            'Email via Website from ' + message_name + message_email, #subject
-            message, #message
+            'Email via Website from ' + message_name + ' ' + message_email, #subject
+            message + ' Email sent from -' + message_email, #message
             message_email, #from email
             [settings.EMAIL_HOST_USER], #to email
         )
