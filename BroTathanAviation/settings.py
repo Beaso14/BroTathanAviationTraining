@@ -139,6 +139,8 @@ MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 # EMAIL
+# https://myaccount.google.com/lesssecureapps
+# https://accounts.google.com/DisplayUnlockCaptcha
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool, default=True)
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')

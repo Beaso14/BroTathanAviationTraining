@@ -18,7 +18,7 @@ def contact(request):
 
         # send Email
         send_mail(
-            'Email via Website from ' + message_name, #subject
+            'Email via Website from ' + message_name + message_email, #subject
             message, #message
             message_email, #from email
             [settings.EMAIL_HOST_USER], #to email
