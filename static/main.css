@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+  --forecolour: #1fff8f;
+
+}
 
 html{
   scroll-behavior: smooth;
@@ -9,7 +14,7 @@ body{
   max-width:100%;
   margin: 0;
   background-color: white;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .main{
@@ -99,9 +104,15 @@ li{
   color: #a8dae2;
 }
 
+.logo {
+  position: relative;
+  filter: grayscale(100%);
+}
+
+
 /* ////main image /////*/
 .container{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../media/jet.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../media/jet.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -123,15 +134,15 @@ li{
 }
 
 .image-primarytext{
-  width: 1000px;
-  position: absolute;
+  height: 5%;
+  position: relative;
   text-align: left;
-  top: 10%;
+  top: 0%;
   left: 0;
-  font-family: "poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 400px;
-  color: rgb(0, 255, 21);
+  color: var(--forecolour);
   letter-spacing: 1px;
 }
 
@@ -141,10 +152,10 @@ li{
   bottom: 10%;
   right: 0;
   text-align: right;
-  font-family: "poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 400px;
-  color: rgb(27, 212, 46);
+  color: var(--forecolour);
   letter-spacing: 1px;
 }
 
@@ -172,16 +183,63 @@ li{
 
 a{
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
-.findoutmorebox {
+.topribbon {
+  opacity: 90%;
+  display: flex;
+  align-items: justify;
   position: absolute;
-  bottom: 5%;
+  width: 33.3%;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  height: 15%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.smallribbon {
+  opacity: 90%;
+  display: flex;
+  align-items: justify;
+  position: absolute;
+  width: 33.3%;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  height: 7.5%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.textbox {
+  position: relative;
+  top: 6%;
+  text-align: left;
+  color: grey;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0%;
   left: 50%;
   transform: translate(-50%);
-  border: rgb(30, 255, 30);
+  display: flex;
+  
+  align-items: center;
+  flex-flow: column nowrap;
+  }
+
+.findoutmorebox {
+  position: relative;
+  border: var(--forecolour);
   border-width: 1px;
-  width: 10%;
+  margin-bottom: 5px;
+  width: fitcontent;
   height: fit-content;
   border-style: solid;
   border-radius: 5%;
@@ -190,7 +248,7 @@ a{
 }
 
 .findoutmorebox:hover {
-  background-color: rgb(30, 255, 30);
+  background-color: var(--forecolour);
   color: black;
 }
 .findoutmorebox a {
@@ -202,6 +260,107 @@ a{
   background-color: black;
 }
 
+.toptext {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height:fit-content;
+  width: 50%;
+  opacity: 90%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.box1{
+  width: auto;
+  top: 10vh;
+  height: 90vh;
+  background-image: url("../media/IMG-20190528-WA0008.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.box2 {
+  top: 0;
+  margin-right: 0;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service{
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--forecolour);
+  border-radius: 10px;
+  width: 30%;
+  height: 80%;
+  margin:10px;
+  background-color: black;
+  opacity: 90%;
+  margin-top: 5px;
+  font-family: "Roboto";
+  color: var(--forecolour);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black !important;
+}
+input:autofill {
+  -webkit-text-fill-color: black !important;
+
+}
+
+label{
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+
+}
+
+input[type=text], input[type=submit], textarea {
+  width: 80%;
+  display: inline-block;
+  background-color: #000000;
+  color: var(--forecolour);
+  margin: 10px;
+}
+
+.inquirybox{
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--forecolour);
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+  margin:10px;
+  background-color: black;
+  opacity: 90%;
+  margin-top: 5px;
+  font-family: "Roboto";
+  color: var(--forecolour);
+
+}
+
+.title{
+  height:10vh;
+  width: 100%;
+
+}
 /* Title */
 .header {
   font-family: WalesSansHeadline,WalesSans,Helvetica Neue,Helvetica,Arial,sans-serif;arial, serif;
@@ -214,7 +373,7 @@ a{
   letter-spacing: 2px;
   width: 95vw;
   clear: both;
-  color: #26dd54;
+  color: var(--forecolour);
   top: 20px
 }
 
@@ -226,8 +385,8 @@ a{
   margin-top: 30px;
   margin-bottom: 20px;
   width: 90vw;
-  color: #26dd54;
-  border: 1px solid #26dd54;
+  color: var(--forecolour);
+  border: 1px solid var(--forecolour);
   border-radius: 0.5px;
 }
 
@@ -238,8 +397,8 @@ a{
   margin-top: 30px;
   margin-bottom: 30px;
   width: 90vw;
-  color: #26dd54;
-  border: 1px solid #26dd54;
+  color: var(--forecolour);
+  border: 1px solid var(--forecolour);
   border-radius: 0.5px;
 }
 
@@ -459,8 +618,14 @@ a{
   align-items: center;
 }
 
-p { margin-bottom: 1.2em; }
-p:last-child { margin-bottom: 0; }
+.logotext {
+  width: 100%;
+  color: rgb(0, 241, 149);
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size:30px;
+  line-height: 30px; }
+
 
 .quote-quote {
   display: block;

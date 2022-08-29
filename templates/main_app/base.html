@@ -10,41 +10,14 @@
 
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-header">
-        <a class="nav-brand" href="{% url 'index' %}">MES</a>
-        <a class="nav-statement" href="{% url 'index' %}">Metrology Engineering Services</a>
-      </div>
-      <div class="navbar-items">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'courses' %}">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'approvals' %}">Quotations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    
 
     <div class="page-container">
       {% block body_block %}
       {% endblock %}
     </div>
 
-    <div class="quote-section">
-      <div class="quote-block">
-        <blockquote class="quote-quote"cite="Albert Einstein">
-          <p> In learning you will teach and in teaching you will learn </p>
-        </blockquote>
-      </div>
-    </div>
+  
 
     <footer class="title-footer">
       <div class="footer-header">

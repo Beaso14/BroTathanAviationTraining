@@ -3,68 +3,98 @@
 {% block body_block %}
 
 <div class="main">
+  <nav class="navbar" id="home">
+    <div class="navbar-header">
+      <a class="nav-brand" href="{% url 'index' %}">MES</a>
+      <a class="nav-statement" href="{% url 'index' %}">Metrology Engineering Services</a>
+    </div>
+    <div class="navbar-items">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'approvals' %}">Inquiries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
     <div class="bg"></div>
-    <div class="image-primarytext">
-      Insert cool line here
+    <div class="toptext">
+      <div class="image-primarytext">
+        Metrology Engineering Services
+      </div>
+      <div class="textbox">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a imperdiet metus. Fusce vehicula pellentesque massa, in dapibus odio tincidunt sit amet. Donec vitae sapien est. Curabitur cursus eleifend dui et consectetur. Sed non orci ut nulla dictum tincidunt id vel lectus. Praesent lacus turpis, laoreet sed dignissim vel, sollicitudin sollicitudin magna. In varius rutrum ex vel porttitor. Praesent vitae rhoncus magna, in commodo lectus. Nunc luctus urna fringilla libero posuere vulputate. Pellentesque posuere ex massa, et tristique mi suscipit non. Nulla sodales vitae ex eget tincidunt. Maecenas sagittis, nibh eleifend feugiat molestie, ipsum purus auctor nisi, at porttitor tortor nunc ac neque. Ut mattis placerat gravida. Maecenas porta laoreet lorem, eu vehicula ante pellentesque sed. Cras id turpis at metus efficitur eleifend. Morbi cursus dolor leo. Curabitur et porttitor urna. Aliquam vestibulum lorem sit amet mauris rutrum mollis.
+      </div>
     </div>
-    <div class="image-secondarytext">
-      and more corporate stuff here
+    <div class="topribbon">
+      <div class="logotext">
+      <p>Powered by <img class = "logo" height = 30px src="../media/Hexagon.png"></p>
+      <p>Trusted by <img class = "logo" height = 20px src="../media/bombardier.png"></p>
     </div>
-    <div class="findoutmorebox">
-    <a href="#title-info">Scroll for more!</a>
+      <div class="buttons">
+      <div class="findoutmorebox">
+      <a href="#services">Our Services</a>
+      </div>
+      <div class="findoutmorebox">
+        <a href="#inquiries">Make an inquiry</a>
+      </div>
+    </div>
     </div>
   </div>
-  <div class="title-info" id="title-info">
-    <h1 class="header">Metrology Engineering Services</h1>
+  <div class="title-info" id="services">
+    <div class="title">
+    <h1 class="header">Our Services</h1>
 
     <hr class="hline">
-
-    <div class="index-wrapper">
-
-      <div class="row-block">
-        <div class="row-block-content">
-          <p class="block-content">
-            Strategically in the Bro Tathan Aerospace Business Park. <br>
-            <br>
-            Classroom study, practical training on aircraft and course
-            examinations all provided within the South Wales area. <br>
-            <br>
-            Access to live Airbus and Boeing aircraft.
-          </p>
-          <a class="content-link" href="{% url 'about_us' %}">Click Here</a>
+    </div>
+      <div class="box1">
+      <div class="box2"><div class="service"><center>Laser Scanning<br><img width = "20%" src="../media/laser.png"><br><font color = "gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</font></center></div><div class="service">Reverse Engineering</div><div class="service">Damage Assessment</div></div>
+      <div class="smallribbon">
+      <div class="buttons">
+        <div class="findoutmorebox">
+        <a href='#home'>Home</a>
         </div>
-
-        <div class="row-block-content">
-          <p class="block-content">
-            Throughout the duration of service we provided
-            to businesses and customers, quality is ensured
-            at every stage. <br>
-            <br>
-            Backed up by the EASA approved courses, we work hard to provide
-            excellent training and consulting services at a competetive price.
-          </p>
-          <a class="content-link" href="{% url 'approvals' %}">Click Here</a>
-        </div>
-
-        <div class="row-block-content">
-          <p class="block-content">
-            Range of training course options. <br>
-            <br>
-            Initial and Continuation Courses. <br>
-            <br>
-            Classroom & Remote learning. <br>
-            <br>
-            Duration of courses varied to suit customer requirements.
-
-          </p>
-          <a class="content-link" href="{% url 'courses' %}">Click Here</a>
+        <div class="findoutmorebox">
+          <a href="#inquiries">Make an inquiry</a>
         </div>
       </div>
-
     </div>
 
+  </div>
+  <div class="title-info" id="inquiries">
+    <div class="title">
+    <h1 class="header">Make an inquiry</h1>
+
+    <hr class="hline">
     </div>
+      <div class="box1">
+      <div class="box2">
+        <div class="inquirybox"><center>
+          <label for="name">Name</label><br>
+          <input type="text" id ="name" placeholder="Name" name="name" required><br>
+          <label for="mail">Email Address</label><br>
+          <input type="text" id="mail" placeholder="Email address" name="mail" required><br>
+          <label for="subject">Subject</label><br>
+          <textarea id="subject" name="subject" placeholder="Write Something..." style="height: 200px" required></textarea><br>
+          <input type="submit" value="Send"></center>
+        </div>
+      <div class="smallribbon">
+      <div class="buttons">
+        <div class="findoutmorebox">
+        <a href='#home'>Home</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
