@@ -118,6 +118,7 @@ li{
   background-size: cover;
   background-color: transparent;
   position: relative;
+  align-items: center;
   text-align: center;
   height: 95vh;
   justify-content: center;
@@ -185,21 +186,23 @@ a{
 }
 
 .topribbon {
-  width: 50%;
+  width: 25%;
+  margin-left: 50%;
   transform: translate(-50%);
   opacity: 90%;
   display: flex;
   flex-direction: column;
-  align-items: justify;
-  justify-content: center;
   position: absolute;
-  right: 0;
   bottom: 0;
   background-color: black;
   height: 15%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  float: left;
 
+}
+.topribbon img, h2 {
+  left: 0;
 }
 
 .smallribbon {
@@ -311,14 +314,19 @@ a{
 }
 
 .service h1, img{
-  text-align: center;
+  width: 80%;
   color: var(--forecolour);
   font-size: large;
   font-family: "Roboto";
   padding-top: 10px;
+  text-align: center;
 }
 
 .service{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
   border-width: 1px;
   border-color: var(--forecolour);
@@ -417,8 +425,8 @@ input[type=text], input[type=submit], textarea {
   border: 1px solid var(--forecolour);
 }
 .textbox hr{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 0;
 }
 
