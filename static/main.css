@@ -134,10 +134,8 @@ li{
 }
 
 .image-primarytext{
-  height: 5%;
-  position: relative;
-  text-align: left;
-  top: 0%;
+  text-align: center;
+  margin-top: 0;
   left: 0;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
