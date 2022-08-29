@@ -26,6 +26,8 @@ li{
 }
 
 .navbar{
+  position: sticky;
+  position: -webkit-sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,6 +92,7 @@ li{
 
 /* ////main image /////*/
 .container{
+  height: 100%;
   position: relative;
   text-align: center;
 }
@@ -97,7 +100,7 @@ li{
 #main-image{
   display: block;
   width: 100vw;
-  height: 600px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   filter: brightness(75%);
