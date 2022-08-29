@@ -187,11 +187,14 @@ a{
 }
 
 .topribbon {
+  width: 50%;
+  transform: translate(-50%);
   opacity: 90%;
   display: flex;
+  flex-direction: column;
   align-items: justify;
+  justify-content: center;
   position: absolute;
-  width: 33.3%;
   right: 0;
   bottom: 0;
   background-color: black;
@@ -217,10 +220,20 @@ a{
 }
 
 .textbox {
+  padding-top: 10px;
   position: relative;
   top: 6%;
   text-align: left;
-  color: grey;
+  font-family: "Roboto";
+  line-height: 20px;
+  color: whitesmoke;
+}
+
+.textbox h1{
+  font-size: large;
+}
+.textbox h2{
+  font-size: small;
 }
 
 .buttons {
@@ -261,7 +274,11 @@ a{
 }
 
 .toptext {
-  display: flex;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  text-align: justify;
+  display: flex; 
   flex-direction: column;
   background-color: black;
   height:fit-content;
@@ -295,6 +312,14 @@ a{
   align-items: center;
 }
 
+.service h1, img{
+  text-align: center;
+  color: var(--forecolour);
+  font-size: large;
+  font-family: "Roboto";
+  padding-top: 10px;
+}
+
 .service{
   border-style: solid;
   border-width: 1px;
@@ -307,7 +332,12 @@ a{
   opacity: 90%;
   margin-top: 5px;
   font-family: "Roboto";
-  color: var(--forecolour);
+  color: whitesmoke;
+}
+
+.service p{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -345,7 +375,7 @@ input[type=text], input[type=submit], textarea {
   border-width: 1px;
   border-color: var(--forecolour);
   border-radius: 10px;
-  width: 90%;
+  width: 50%;
   height: 80%;
   margin:10px;
   background-color: black;
@@ -384,10 +414,14 @@ input[type=text], input[type=submit], textarea {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 20px;
-  width: 90vw;
+  width: 90%;
   color: var(--forecolour);
   border: 1px solid var(--forecolour);
-  border-radius: 0.5px;
+}
+.textbox hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
 .hline-ad{
@@ -620,10 +654,12 @@ input[type=text], input[type=submit], textarea {
 
 .logotext {
   width: 100%;
+  margin: 10px;
   color: rgb(0, 241, 149);
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  font-size:30px;
+  font-size:25px;
+  font-weight: lighter;
   line-height: 30px; }
 
 

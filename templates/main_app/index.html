@@ -10,17 +10,15 @@
     </div>
     <div class="navbar-items">
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'approvals' %}">Inquiries</a>
+          <a class="nav-link" href="#inquiries">Inquiries</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+          <a class="nav-link" href="#inquiries">Contact us</a>
         </li>
       </ul>
     </div>
@@ -28,25 +26,24 @@
   <div class="container">
     <div class="bg"></div>
     <div class="toptext">
-      <div class="image-primarytext">
+      <div class="image-primarytext" style="text-align: center;">
         Metrology Engineering Services
       </div>
       <div class="textbox">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a imperdiet metus. Fusce vehicula pellentesque massa, in dapibus odio tincidunt sit amet. Donec vitae sapien est. Curabitur cursus eleifend dui et consectetur. Sed non orci ut nulla dictum tincidunt id vel lectus. Praesent lacus turpis, laoreet sed dignissim vel, sollicitudin sollicitudin magna. In varius rutrum ex vel porttitor. Praesent vitae rhoncus magna, in commodo lectus. Nunc luctus urna fringilla libero posuere vulputate. Pellentesque posuere ex massa, et tristique mi suscipit non. Nulla sodales vitae ex eget tincidunt. Maecenas sagittis, nibh eleifend feugiat molestie, ipsum purus auctor nisi, at porttitor tortor nunc ac neque. Ut mattis placerat gravida. Maecenas porta laoreet lorem, eu vehicula ante pellentesque sed. Cras id turpis at metus efficitur eleifend. Morbi cursus dolor leo. Curabitur et porttitor urna. Aliquam vestibulum lorem sit amet mauris rutrum mollis.
+        <h1>With over 20 years in the aircraft repair engineering sector, we are a leading service provider specialising in reverse engineering, 3D laser scanning, aircraft damage assessment and quality inspection.</h1>
+        <hr class="hline">
+        <h2>Over the course of an aircraft's lifecycle, it is likely to sustain some form of structural damage, and due to this, damage assessment will remain an essential step in repairing an aircraft. Demand is increasing and a digital solution is the only answer, We have developed a proven solution that accelerates inspection and assessment to help the aircraft to be returned to service as quickly as possible - reducing downtime, saving money, allowing certified engineers to concentrate on other tasks and contributing to safer air travel.</h2> 
       </div>
     </div>
     <div class="topribbon">
       <div class="logotext">
-      <p>Powered by <img class = "logo" height = 30px src="../media/Hexagon.png"></p>
-      <p>Trusted by <img class = "logo" height = 20px src="../media/bombardier.png"></p>
+      <h2>Powered by <img style="vertical-align: middle" class="logo" height = 30px src="../media/Hexagon.png"></h2>
+      </div>
+      <div class="logotext">
+      <h2>Trusted by <img class = "logo" style="vertical-align: middle" height = 20px src="../media/bombardier.png"></h2>
     </div>
-      <div class="buttons">
-      <div class="findoutmorebox">
-      <a href="#services">Our Services</a>
-      </div>
-      <div class="findoutmorebox">
-        <a href="#inquiries">Make an inquiry</a>
-      </div>
+    </div>
+
     </div>
     </div>
   </div>
@@ -56,15 +53,30 @@
 
     <hr class="hline">
     </div>
-      <div class="box1">
-      <div class="box2"><div class="service"><center>Laser Scanning<br><img width = "20%" src="../media/laser.png"><br><font color = "gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</font></center></div><div class="service">Reverse Engineering</div><div class="service">Damage Assessment</div></div>
+      <div class="box1" style="background-image: url('../media/cockpit.jpg');">
+      <div class="box2">
+        <div class="service">
+          <h1>Laser Scanning</h1>
+          <img width = "20%" src="../media/laser.png">
+          <p>Laser scanners capture the entire part geometry for inspection or reverse engineering purposes, covering both freeform surfaces and geometric features. Laser scanners are used with CMMs, articulated arms, optical CMMs or even robots. The resulting digital copy forms the backbone of a powerful digital inspection process that streamlines inspection processes, reduces time to market and cuts development costs. 3D Laser Scanning accelerates design-through-manufacturing by providing full geometry feedback</p>
+        </div>
+        <div class="service">
+          <h1>Reverse Engineering </h1>
+          <p>Reverse Engineering has become a standard procedure for engineers in a wide range of markets. The technique can be used in product development, production engineering, cost down programmes and refurbishing of components. 
+          In situations where the engineer has only 2D data or no drawings at all,  we will scan the component and post-production of a polygon model will produce a workable solid parametric CAD file with design intent.The file can then be used to modify or manufacture the components. STL files can also be produced to allow the production of rapid prototypes and prototype castings.</p>
+        </div>
+        <div class="service">
+          <h1>Damage Assessment</h1> 
+          <p>The process of damage assessment is time consuming. Often the inspection takes a considerable amount of time due to the manual effort and manual inspection methods that is common practise in the industry. The manual skillset is becoming ever more scarce resulting in longer lead times to achieving accurate damage assessment. The results incostly delays, inaccurate reporting and increased costs. Using the latest equipment and software reduces the delay, saves time, gives more accurate date and allows for detailed complex repair engineering solutions to be provided quicker.</p>
+        </div>
+      </div>
       <div class="smallribbon">
       <div class="buttons">
         <div class="findoutmorebox">
         <a href='#home'>Home</a>
         </div>
         <div class="findoutmorebox">
-          <a href="#inquiries">Make an inquiry</a>
+          <a href="#inquiries">Contact us</a>
         </div>
       </div>
     </div>
@@ -72,21 +84,18 @@
   </div>
   <div class="title-info" id="inquiries">
     <div class="title">
-    <h1 class="header">Make an inquiry</h1>
+    <h1 class="header">Contact us</h1>
 
     <hr class="hline">
     </div>
-      <div class="box1">
+      <div class="box1" style="background-image: url('../media/engine.jpg');">
       <div class="box2">
-        <div class="inquirybox"><center>
-          <label for="name">Name</label><br>
-          <input type="text" id ="name" placeholder="Name" name="name" required><br>
-          <label for="mail">Email Address</label><br>
-          <input type="text" id="mail" placeholder="Email address" name="mail" required><br>
-          <label for="subject">Subject</label><br>
-          <textarea id="subject" name="subject" placeholder="Write Something..." style="height: 200px" required></textarea><br>
-          <input type="submit" value="Send"></center>
-        </div>
+        <div class="inquirybox">
+          <center>Contact Information</center><br><font color = "gray">
+            <ul>
+              <li>Email: sales@metrologyengineeringservices</li>
+            </ul>
+          </font>
       <div class="smallribbon">
       <div class="buttons">
         <div class="findoutmorebox">
@@ -96,35 +105,7 @@
     </div>
 
   </div>
-
-
-  <div class="box-container">
-    <!-- <img id="secondary-image" src="media/Home page Wing Repair - Hi Res.jpg" alt=""> -->
-    <div class="parallax">
-      <div class="image-row-header">
-        <div class="image-row-block-header">
-          <span class="block-header-image">EASA Part 147 Training</span>
-          <div class="block-text">
-            Approvals Provided by Telepathy Academy EASA 147.00128 & <br>
-            British School of Aviation (BSA) 147.0123
-          </div>
-
-        </div>
-        <div class="image-row-block-header">
-          <span class="block-header-image">EASA Part 145 Accredited Aviation Training</span>
-          <span class="block-text">
-            Human Factor, Fuel Tank & Ewis Group
-          </span>
-        </div>
-        <div class="image-row-block-header">
-          <span class="block-header-image">Bespoke Courses</span>
-          <span class="block-text">
-            Including Part 66 initial training, Quality Management Systems, <br>
-            Part M & Aircraft cleaning
-          </span>
-        </div>
-      </div>
-    </div>
+       
   </div>
 
 
