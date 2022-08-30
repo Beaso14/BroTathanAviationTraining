@@ -18,8 +18,14 @@ from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
-STATIC_DIR = os.path.join(BASE_DIR,'static')
-MEDIA_DIR = os.path.join(BASE_DIR,'media')
+STATIC_ROOT = ''
+STATIC_URL = '/static/'
+STATICFILES_DIRS = ( os.path.join('static'), )
+
+
+#MEDIA
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL =  '/media/'
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,7 +35,7 @@ MEDIA_DIR = os.path.join(BASE_DIR,'media')
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -69,6 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
@@ -131,12 +138,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
 
-#MEDIA
-MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media/'
 
 # EMAIL
 # https://myaccount.google.com/lesssecureapps
